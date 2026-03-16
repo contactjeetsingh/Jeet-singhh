@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import CareerRoadmapLayout from "../components/CareerRoadMapLayout";
+import CareerRoadmapLayout from "@/components/CareerRoadmapLayout";
 import { Target } from "lucide-react";
 
 const SolutionArchitectRoadmap = () => {
