@@ -315,7 +315,7 @@ const ComingSoon = () => {
 
 
             <Link
-              to="/ContactPage"
+              to="/contact"
               className="block p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200 hover:shadow-lg transition-all group"
             >
               <div className="flex items-center gap-3 mb-3">
