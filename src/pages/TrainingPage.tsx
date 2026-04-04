@@ -388,7 +388,7 @@ const TrainingPage = () => {
 
                     {/* CTA */}
                     <Link
-                      to={`/training/${program.id}`}
+                      to="/ComingSoonPage"
                       className="block w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium rounded-xl text-center transition-all"
                     >
                       View Program Details
@@ -460,7 +460,7 @@ const TrainingPage = () => {
                       </div>
 
                       <Link
-                        to={`/training/${program.id}`}
+                        to="/ComingSoonPage"
                         className="block w-full px-3 py-2 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium rounded-lg text-center transition-all"
                       >
                         Learn More
@@ -574,7 +574,7 @@ const TrainingPage = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              to="/contact/training"
+              to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 hover:bg-gray-100 font-medium rounded-full transition-all"
             >
               Get Personalized Advice
