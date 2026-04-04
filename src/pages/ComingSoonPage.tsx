@@ -296,7 +296,7 @@ const ComingSoon = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link
-              to="/resources"
+              to="/FreeResourcesMasterPage"
               className="block p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200 hover:shadow-lg transition-all group"
             >
               <div className="flex items-center gap-3 mb-3">
@@ -313,26 +313,9 @@ const ComingSoon = () => {
               </span>
             </Link>
 
-            <Link
-              to="/training"
-              className="block p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200 hover:shadow-lg transition-all group"
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-purple-600" />
-                </div>
-                <h3 className="font-bold text-gray-900">Training Programs</h3>
-              </div>
-              <p className="text-sm text-gray-600 mb-3">
-                Join live cohorts or self-paced training programs available now.
-              </p>
-              <span className="text-sm text-purple-600 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                View Programs <ArrowLeft className="w-3 h-3 rotate-180" />
-              </span>
-            </Link>
 
             <Link
-              to="/contact"
+              to="/ContactPage"
               className="block p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200 hover:shadow-lg transition-all group"
             >
               <div className="flex items-center gap-3 mb-3">
@@ -404,19 +387,13 @@ const ComingSoon = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              to="/resources"
+              to="/FreeResourcesMasterPage"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 hover:bg-gray-100 font-medium rounded-full transition-all"
             >
               <Rocket className="w-4 h-4" />
               Explore Resources
             </Link>
-            <Link
-              to="/training"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full font-medium transition-all border border-white/20"
-            >
-              <Sparkles className="w-4 h-4" />
-              View Training Programs
-            </Link>
+            
           </div>
         </div>
       </section>
