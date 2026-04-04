@@ -97,6 +97,7 @@ import AgentforceGuide from "./pages/AgentforceGuideFormPage";
 import InterviewPrepKit from "./pages/InterviewPrepKitFormPage";
 import ComingSoon from "./pages/ComingSoonPage";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import TrainingPage from "./pages/TrainingPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -210,6 +211,7 @@ const App = () => (
           <Route path="/CareerRoadmapsFormPage" element={<CareerRoadmaps />} />
           <Route path="/AgentforceGuideFormPage" element={<AgentforceGuide />} />
           <Route path="/InterviewPrepKitFormPage" element={<InterviewPrepKit />} />
+          <Route path="/TrainingPage" element={<TrainingPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
