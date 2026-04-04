@@ -19,13 +19,13 @@ const InsightDetailPage = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    if (!insight) return;
+  if (!insight) return;
 
-    fetch(`/src/data/insights/${insight.folder}/index.md`)
-      .then((res) => res.text())
-      .then((text) => setContent(text));
+  import(`../data/insights/${insight.folder}/index.md?raw`)
+    .then((module) => setContent(module.default))
+    .catch(() => setContent("Content not found"));
 
-  }, [insight]);
+}, [insight]);
 
   const related = blogList
     .filter(
