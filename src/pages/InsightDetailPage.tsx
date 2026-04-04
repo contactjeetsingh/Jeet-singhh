@@ -18,12 +18,21 @@ const InsightDetailPage = () => {
 
   const [content, setContent] = useState("");
 
-  useEffect(() => {
+ const modules = import.meta.glob("../data/insights/*/index.md", {
+  as: "raw",
+  eager: true
+});
+
+useEffect(() => {
   if (!insight) return;
 
-  import(`../data/insights/${insight.folder}/index.md?raw`)
-    .then((module) => setContent(module.default))
-    .catch(() => setContent("Content not found"));
+  const path = `../data/insights/${insight.folder}/index.md`;
+
+  if (modules[path]) {
+    setContent(modules[path] as string);
+  } else {
+    setContent("Content not found");
+  }
 
 }, [insight]);
 
