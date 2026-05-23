@@ -80,6 +80,11 @@ useEffect(() => {
           <p className="text-sm text-muted-foreground mb-10">
             {insight.date}
           </p>
+          <img
+  src={insight.image}
+  alt={insight.title}
+  className="w-full rounded-xl mb-10"
+/>
 
           <div className="prose prose-lg max-w-none">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>

@@ -57,6 +57,7 @@ const InsightCard = ({ insight, index = 0 }: InsightCardProps) => {
         group
         "
       >
+      
         {/* Category */}
         <span className={`text-xs font-bold tracking-widest uppercase ${colorClass} mb-3`}>
           {category}
