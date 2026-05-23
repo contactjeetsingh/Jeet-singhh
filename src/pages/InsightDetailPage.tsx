@@ -86,7 +86,7 @@ useEffect(() => {
   className="w-full rounded-xl mb-10"
 />
 
-          <div className="prose prose-lg max-w-none">
+        <div className="prose max-w-none prose-p:my-1 prose-li:my-0">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {content}
             </ReactMarkdown>

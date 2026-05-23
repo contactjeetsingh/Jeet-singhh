@@ -11,7 +11,7 @@
     "folder": "2025-03-08-apex-security-best-practices-how-to-avoid-soql-injection"
   },
   {
-    "slug": "2026-05-22-why-most-crm-transformations-fail-despite-huge-investments",
+    "slug": "why-most-crm-transformations-fail-despite-huge-investments",
     "title": "Why Most CRM Transformations Fail Despite Huge Investments",
     "categories": [
       "Enterprise"
@@ -19,10 +19,10 @@
     "date": "2026-05-22",
     "image": "/images/crm.png",
     "excerpt": "title: \"Why Most CRM Transformations Fail Despite Huge Investments\" date: 20260522 categories:  \"Enterprise\"   ![](/images/crm.png)   In Salesforce development,",
-    "folder": "2026-05-22-why-most-crm-transformations-fail-despite-huge-investments"
+    "folder": "why-most-crm-transformations-fail-despite-huge-investments"
   },
    {
-    "slug": "2026-05-23-ai-agents-may-redefine-customer-support-operations",
+    "slug": "ai-agents-may-redefine-customer-support-operations",
     "title": "AI Agents May Redefine Customer Support Operations",
     "categories": [
       "Enterprise"
@@ -30,10 +30,10 @@
     "date": "2026-05-23",
     "image": "/images/Ai-main.png",
     "excerpt": "title: \"AI Agents May Redefine Customer Support Operations\" date: 20260523 categories:  \"Enterprise\"   ![](/images/Ai-main.png)   Apex triggers a",
-    "folder": "2026-05-23-ai-agents-may-redefine-customer-support-operations"
+    "folder": "ai-agents-may-redefine-customer-support-operations"
   },
   {
-    "slug": "2026-05-23-certifications-alone-do-not-create-architects",
+    "slug": "certifications-alone-do-not-create-architects",
     "title": "Certifications Alone Do Not Create Architects",
     "categories": [
       "Enterprise"
@@ -41,7 +41,7 @@
     "date": "2026-05-23",
     "image": "/images/Alone.png",
     "excerpt": "title: \"Certifications Alone Do Not Create Architects\" date: 20260523 categories:  \"Enterprise\"   ![](/images/Alone.png)   Writing effi",
-    "folder": "2026-05-23-certifications-alone-do-not-create-architects"
+    "folder": "certifications-alone-do-not-create-architects"
   },
   {
     "slug": "2025-03-08-building-dynamic-amp-interactive-ui-with-lwc",
