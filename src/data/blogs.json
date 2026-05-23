@@ -56,15 +56,15 @@
     "folder": "2025-03-08-building-dynamic-amp-interactive-ui-with-lwc"
   },
   {
-    "slug": "2025-03-08-event-handling-in-lwc-parent-to-child-amp-child-to-parent-explained",
+    "slug": "event-handling-in-lwc-parent-to-child-amp-child-to-parent-explained",
     "title": "Event Handling In Lwc Parent To Child Amp Child To Parent Explained",
     "categories": [
       "LWC"
     ],
     "date": "2025-03-08",
-    "image": "/images/Event.png",
+    "image": "/images/Eventt.png",
     "excerpt": "title: \"LWC Event Handling: Master ParenttoChild & ChildtoParent Communication\" date: 20250308 categories:  \"LWC\"     ![](/images/Event.png)    In Lightning We",
-    "folder": "2025-03-08-event-handling-in-lwc-parent-to-child-amp-child-to-parent-explained"
+    "folder": "event-handling-in-lwc-parent-to-child-amp-child-to-parent-explained"
   },
   {
     "slug": "2025-03-08-exception-handling-in-apex-try-catch-best-practices",
