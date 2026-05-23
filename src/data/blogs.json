@@ -21,6 +21,28 @@
     "excerpt": "title: \"Why Most CRM Transformations Fail Despite Huge Investments\" date: 20260522 categories:  \"Apex\"   ![](/images/Triggers.png)   Apex triggers are a p",
     "folder": "2026-05-22-why-most-crm-transformations-fail-despite-huge-investments"
   },
+   {
+    "slug": "2026-05-23-ai-agents-may-redefine-customer-support-operations",
+    "title": "AI Agents May Redefine Customer Support Operations",
+    "categories": [
+      "Apex"
+    ],
+    "date": "2026-05-23",
+    "image": "/images/Best-Practices.png",
+    "excerpt": "title: \"AI Agents May Redefine Customer Support Operations\" date: 20260523 categories:  \"Apex\"   ![](/images/BestPractices.png)   Apex triggers a",
+    "folder": "2026-05-23-ai-agents-may-redefine-customer-support-operations"
+  },
+  {
+    "slug": "2026-05-23-certifications-alone-do-not-create-architects",
+    "title": "Certifications Alone Do Not Create Architects",
+    "categories": [
+      "Apex"
+    ],
+    "date": "2026-05-23",
+    "image": "/images/Efficient.png",
+    "excerpt": "title: \"Certifications Alone Do Not Create Architects\" date: 20260523 categories:  \"Apex\"   ![](/images/Efficient.png)   Writing effi",
+    "folder": "2026-05-23-certifications-alone-do-not-create-architects"
+  },
   {
     "slug": "2025-03-08-building-dynamic-amp-interactive-ui-with-lwc",
     "title": "Building Dynamic Amp Interactive Ui With Lwc",
