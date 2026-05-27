@@ -11,6 +11,17 @@
     "folder": "2025-03-08-apex-security-best-practices-how-to-avoid-soql-injection"
   },
   {
+    "slug": "what-i-learned-working-on-large-transformation-programs",
+    "title": "What I Learned Working On Large Transformation Programs",
+    "categories": [
+      "Enterprise"
+    ],
+    "date": "2026-05-27",
+    "image": "/images/Learned.png",
+    "excerpt": "title: \"What I Learned Working On Large Transformation Programs\" date: 20260527 categories:  \"Enterprise\"   ![](/images/Learned.png)   In Salesforce de",
+    "folder": "what-i-learned-working-on-large-transformation-programs"
+  },
+  {
     "slug": "why-most-crm-transformations-fail-despite-huge-investments",
     "title": "Why Most CRM Transformations Fail Despite Huge Investments",
     "categories": [
