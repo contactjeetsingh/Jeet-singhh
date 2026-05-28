@@ -11,6 +11,17 @@
     "folder": "2025-03-08-apex-security-best-practices-how-to-avoid-soql-injection"
   },
   {
+    "slug": "the-future-salesforce-professionals-need-ai-understanding",
+    "title": "The Future Salesforce Professionals Need Ai Understanding",
+    "categories": [
+      "Enterprise"
+    ],
+    "date": "2026-05-28",
+    "image": "/images/understanding.png",
+    "excerpt": "title: \"The Future Salesforce Professionals Need AI Understanding\" date: 20250308 categories:  \"Enterprise\"   ![](/images/Unit.png)   As AI becomes more integrated into Salesforce, professionals need to understand how to leverage these technologies to enhance their development practices.",
+    "folder": "the-future-salesforce-professionals-need-ai-understanding"
+  },
+  {
     "slug": "what-i-learned-working-on-large-transformation-programs",
     "title": "What I Learned Working On Large Transformation Programs",
     "categories": [
