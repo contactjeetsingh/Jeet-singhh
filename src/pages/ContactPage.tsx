@@ -183,7 +183,7 @@ const ContactPage = () => {
                 <h3 className="font-semibold text-gray-900 mb-4">Connect on social</h3>
                 <div className="flex gap-3">
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/jeetsalesforce/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 rounded-xl transition-all hover:scale-110"
@@ -199,7 +199,7 @@ const ContactPage = () => {
                     <Twitter className="w-5 h-5" />
                   </a>
                   <a 
-                    href="https://youtube.com" 
+                    href="https://www.youtube.com/@JeetSalesforce" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 hover:bg-red-100 text-gray-600 hover:text-red-600 rounded-xl transition-all hover:scale-110"
