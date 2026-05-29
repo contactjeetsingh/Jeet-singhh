@@ -151,7 +151,7 @@ const Header = () => {
           {/* Social Icons - Dark version */}
           <div className="hidden md:flex items-center gap-2">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/jeetsalesforce/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-gray-600 hover:text-blue-600 transition-all hover:scale-110"
@@ -161,7 +161,7 @@ const Header = () => {
               </svg>
             </a>
             <a 
-              href="https://youtube.com" 
+              href="https://www.youtube.com/@JeetSalesforce" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-gray-600 hover:text-red-600 transition-all hover:scale-110"
