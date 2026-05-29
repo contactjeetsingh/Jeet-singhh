@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
-
+import {
+  Phone,
+  Mail,
+  MapPin,
+  ArrowRight
+} from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -206,13 +211,12 @@ const Footer = () => {
                 className="flex-1 px-4 py-2 rounded-l-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 required
               />
-              <button 
-                type="submit"
-                className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors"
-                aria-label="Subscribe"
-              >
-                <i className="fas fa-long-arrow-alt-right text-white"></i>
-              </button>
+             <button
+  type="submit"
+  className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors text-white font-medium"
+>
+  Subscribe
+</button>
             </form>
           </div>
         </div>
@@ -223,7 +227,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <div className="bg-white/10 p-3 rounded-full">
               <a href="https://wa.me/919986142784" className="text-white hover:text-blue-300 transition-colors">
-                <i className="fas fa-phone text-xl"></i>
+                <Phone size={20} />
               </a>
             </div>
             <div>
@@ -238,7 +242,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <div className="bg-white/10 p-3 rounded-full">
               <a href="mailto:info@jeet-singh.com" className="text-white hover:text-blue-300 transition-colors">
-                <i className="fas fa-envelope text-xl"></i>
+                <Mail size={20} />
               </a>
             </div>
             <div>
@@ -253,7 +257,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <div className="bg-white/10 p-3 rounded-full">
               <a href="#" className="text-white hover:text-blue-300 transition-colors">
-                <i className="fas fa-home text-xl"></i>
+                <MapPin size={20} />
               </a>
             </div>
             <div>
