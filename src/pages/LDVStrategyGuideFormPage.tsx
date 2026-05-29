@@ -33,9 +33,10 @@ const LDVStrategyGuide = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+    let response: Response | null = null;
+
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -51,7 +52,7 @@ const LDVStrategyGuide = () => {
         }),
       });
       
-      if (response.ok) {
+      if (response?.ok) {
         setIsSubmitted(true);
         setTimeout(() => {
           const link = document.createElement('a');

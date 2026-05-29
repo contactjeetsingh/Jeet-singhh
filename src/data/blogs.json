@@ -11,6 +11,17 @@
     "folder": "2025-03-08-apex-security-best-practices-how-to-avoid-soql-injection"
   },
   {
+    "slug": "why-enterprises-struggle-with-user-adoption",
+    "title": "Why Enterprises Struggle With User Adoption",
+    "categories": [
+      "Enterprise"
+    ],
+    "date": "2026-05-29",
+    "image": "/images/user-adoption.png",
+    "excerpt": "title: \"Why Enterprises Struggle With User Adoption\" date: 20260529 categories:  \"Enterprise\"   ![](/images/user-adoption.png)   In Salesforce development,",
+    "folder": "why-enterprises-struggle-with-user-adoption"
+  },
+  {
     "slug": "the-future-salesforce-professionals-need-ai-understanding",
     "title": "The Future Salesforce Professionals Need Ai Understanding",
     "categories": [
