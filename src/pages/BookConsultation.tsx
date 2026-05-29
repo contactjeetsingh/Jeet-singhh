@@ -55,6 +55,7 @@ export default function BookConsultation() {
   setLoading(true);
 
  const data = {
+  formType: "book consultation", 
   firstName: form.firstName,
   lastName: form.lastName,
   email: form.email,
@@ -78,7 +79,17 @@ alert(
   "Thank you! Your consultation request has been submitted successfully."
 );
     setSubmitted(true);
-    reset();
+
+setForm({
+  firstName: "",
+  lastName: "",
+  email: "",
+  organization: "",
+  phone: "",
+  role: "",
+  topic: "",
+  message: "",
+});
   } catch (error) {
   console.error("FULL ERROR:", error);
   alert(JSON.stringify(error));

@@ -34,37 +34,37 @@ const CTAStudyGuide = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_KEY',
-          subject: 'CTA Study Guide Download',
-          from_name: formData.name,
-          email: formData.email,
-          company: formData.company,
-          role: formData.role,
-          experience: formData.experience,
-          resource: 'CTA Study Guide',
-          replyto: formData.email,
-        }),
-      });
-      
-      if (response.ok) {
-        setIsSubmitted(true);
-        // Trigger download after successful submission
-        setTimeout(() => {
-          const link = document.createElement('a');
-          link.href = '/resources/cta-study-guide.pdf';
-          link.download = 'cta-study-guide.pdf';
-          link.click();
-        }, 1000);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    } finally {
+  await fetch(
+    "https://script.google.com/macros/s/AKfycbxn_y76FLJaxvRfVOSCEyXokGPL52ekDR7fF8cYF4g5XLlEvPgLLgYI_u98ewIBVJ91/exec",
+    {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify({
+        formType: "Study guide form",
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        role: formData.role,
+        experience: formData.experience,
+      }),
+    }
+  );
+
+  setIsSubmitted(true);
+
+  setTimeout(() => {
+    const link = document.createElement("a");
+    link.href = "/resources/cta-study-guide.pdf";
+    link.download = "cta-study-guide.pdf";
+    link.click();
+  }, 1000);
+
+} catch (error) {
+  console.error("Submission error:", error);
+  alert("Failed to submit.");
+}
+    finally {
       setIsSubmitting(false);
     }
   };

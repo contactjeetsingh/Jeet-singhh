@@ -27,28 +27,46 @@ const ContactPage = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormState({
-          name: "",
-          email: "",
-          company: "",
-          service: "",
-          message: ""
-        });
-      }, 3000);
-    }, 1500);
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const data = {
+    formType: "contact", 
+    fullName: formState.name,
+    email: formState.email,
+    company: formState.company,
+    interestedIn: formState.service,
+    message: formState.message,
   };
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbxn_y76FLJaxvRfVOSCEyXokGPL52ekDR7fF8cYF4g5XLlEvPgLLgYI_u98ewIBVJ91/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(data),
+      }
+    );
+
+    setIsSubmitted(true);
+
+    setFormState({
+      name: "",
+      email: "",
+      company: "",
+      service: "",
+      message: ""
+    });
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to submit form.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const services = [
     "Architecture Review",
