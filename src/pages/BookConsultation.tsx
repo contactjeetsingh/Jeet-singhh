@@ -54,35 +54,35 @@ export default function BookConsultation() {
   e.preventDefault();
   setLoading(true);
 
-  const form = e.currentTarget;
-
-  const data = {
-    firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
-    lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
-    email: (form.elements.namedItem("email") as HTMLInputElement).value,
-    organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
-    phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
-    role: (form.elements.namedItem("role") as HTMLInputElement).value,
-    topic: (form.elements.namedItem("topic") as HTMLSelectElement).value,
-    message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
-  };
+ const data = {
+  firstName: form.firstName,
+  lastName: form.lastName,
+  email: form.email,
+  organization: form.organization,
+  phone: form.phone,
+  role: form.role,
+  topic: form.topic,
+  message: form.message,
+};
 
   try {
     await fetch(
-      "https://script.google.com/macros/s/AKfycbx5Zh0R7phtEe81_ACP1ftbD6oQ-YisEoI7Qsn1gu92MOfk-KqEpsEV4FY6gLRLsuYAGQ/exec",
+      "https://script.google.com/macros/s/AKfycbxn_y76FLJaxvRfVOSCEyXokGPL52ekDR7fF8cYF4g5XLlEvPgLLgYI_u98ewIBVJ91/exec",
       {
-        method: "POST",
-        mode: "no-cors",
-        body: JSON.stringify(data),
+       method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(data),
       }
     );
-
+alert(
+  "Thank you! Your consultation request has been submitted successfully."
+);
     setSubmitted(true);
-    form.reset();
+    reset();
   } catch (error) {
-    console.error("Submission error:", error);
-    alert("Something went wrong. Please try again.");
-  } finally {
+  console.error("FULL ERROR:", error);
+  alert(JSON.stringify(error));
+} finally {
     setLoading(false);
   }
 };
@@ -227,7 +227,7 @@ export default function BookConsultation() {
                 <div className="space-y-1.5">
                   <label className="text-sm font-medium text-[#1e3a5f]">What would you like to discuss?</label>
                   <textarea
-                  name="message "
+                  name="message"
                     rows={4}
                     placeholder="Briefly describe your goals or the challenges you're facing…"
                     value={form.message}
